@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-valens-black: #050505;
+  --color-valens-dark: #0a0a0a;
+  --color-valens-card: #121212;
+  --color-valens-accent: #ffffff;
+  --color-valens-dim: #888888;
+
+  /* Custom Backgrounds */
+  --background-image-glow-radial: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 70%);
+
+  /* Custom Animations */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Global Styles */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 5, 5, 5;
+  --background-end-rgb: 10, 10, 10;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
